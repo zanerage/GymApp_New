@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">GymApp</string>
+    <string name="login">Fitness Link</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="if_you_don_t_have_an_account_yet_click_here">If you don\'t have an account yet, SIGN UP HERE</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
 </resources>
