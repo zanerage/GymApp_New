@@ -1,11 +1,11 @@
-package mario_antolovic.com
+package mario_antolovic.com.Activities
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
+import mario_antolovic.com.R
 import android.content.Intent as Intent1
 
 class LoginActivity : AppCompatActivity(),View.OnClickListener {
@@ -13,8 +13,6 @@ class LoginActivity : AppCompatActivity(),View.OnClickListener {
 
 
     private lateinit var mAuth: FirebaseAuth
-
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,7 +30,7 @@ class LoginActivity : AppCompatActivity(),View.OnClickListener {
 
         mAuth = FirebaseAuth.getInstance()
         if (mAuth.currentUser != null) {
-            startActivity(Intent1(this,MainActivity::class.java))
+            startActivity(Intent1(this, MainActivity::class.java))
             finish()
         }
         // set the onclick listner method upon activity creation
@@ -41,13 +39,13 @@ class LoginActivity : AppCompatActivity(),View.OnClickListener {
 
     override fun onClick(view:View) {
         when(view.id) {
-            R.id.login_btn-> {
+            R.id.login_btn -> {
                 val email = edt_username.text.toString()
                 val password = edt_password.text.toString()
                 if (validate(email,password)) {
                     mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener {
                         if (it.isSuccessful) {
-                            startActivity(Intent1(this,MainActivity::class.java))
+                            startActivity(Intent1(this, MainActivity::class.java))
                             finish()
 
                         } else {

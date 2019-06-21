@@ -1,4 +1,4 @@
-package mario_antolovic.com
+package mario_antolovic.com.Activities
 
 import android.content.Context
 import android.widget.Toast

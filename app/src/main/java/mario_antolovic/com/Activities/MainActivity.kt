@@ -1,4 +1,4 @@
-package mario_antolovic.com
+package mario_antolovic.com.Activities
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
+import mario_antolovic.com.R
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(view:View) {
@@ -32,4 +33,5 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         mAuth=FirebaseAuth.getInstance()
     }
+
 }

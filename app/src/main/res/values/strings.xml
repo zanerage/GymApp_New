@@ -9,4 +9,14 @@
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="register">Register</string>
+    <string name="welcome_user">Welcome User</string>
+    <string name="log_out">Log Out</string>
+    <string name="logoslika">logoslika</string>
+    <string name="usercreated">usercreated</string>
+    <string name="mario_antolovic">Mario Antolovic</string>
+    <string name="links_500">Links: 500</string>
+    <string name="_2000_caloies_burned_today">2000 Caloies Burned Today</string>
+    <string name="body_mass_index_20">Body Mass Index 20%</string>
+    <string name="fat_percentage_13">Fat Percentage 13%</string>
+    <string name="weight_78kg_height_1_80_m">Weight: 78Kg. Height: 1.80 m.</string>
 </resources>
