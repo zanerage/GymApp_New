@@ -19,4 +19,5 @@
     <string name="body_mass_index_20">Body Mass Index 20%</string>
     <string name="fat_percentage_13">Fat Percentage 13%</string>
     <string name="weight_78kg_height_1_80_m">Weight: 78Kg. Height: 1.80 m.</string>
+    <string name="go_to_profile">Go to Profile</string>
 </resources>

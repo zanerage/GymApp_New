@@ -9,29 +9,30 @@ import kotlinx.android.synthetic.main.activity_main.*
 import mario_antolovic.com.R
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
-    override fun onClick(view:View) {
-        when(view.id) {
-            R.id.logout_btn -> {
-                mAuth.signOut()
-            startActivity(Intent(this, LoginActivity::class.java))
-           finish()
+    private val TAG = "MainActivity"
 
-        }
-
-        }
-    }
     private lateinit var mAuth: FirebaseAuth
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-            logout_btn.setOnClickListener(this)
-
-
-        mAuth=FirebaseAuth.getInstance()
+        mAuth = FirebaseAuth.getInstance()
+        logout_btn.setOnClickListener(this)
+        profile_btn.setOnClickListener(this)
     }
 
+    override fun onClick(view: View) {
+        when(view.id) {
+            R.id.logout_btn -> {
+                mAuth.signOut()
+                startActivity(Intent(this, LoginActivity::class.java))
+                finish()
+            }
+        }
+        when(view.id) {
+            R.id.profile_btn -> {
+                startActivity(Intent(this,ProfileActivity::class.java))
+            }
+        }
+    }
 }
