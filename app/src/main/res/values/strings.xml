@@ -17,7 +17,16 @@
     <string name="links_500">Links: 500</string>
     <string name="_2000_caloies_burned_today">2000 Caloies Burned Today</string>
     <string name="body_mass_index_20">Body Mass Index 20%</string>
-    <string name="fat_percentage_13">Fat Percentage 13%</string>
+    <string name="fat_percentage_13">Fat Percentage</string>
     <string name="weight_78kg_height_1_80_m">Weight: 78Kg. Height: 1.80 m.</string>
     <string name="go_to_profile">Go to Profile</string>
+    <string name="weight">Weight</string>
+    <string name="_180_lbs">180 lbs.</string>
+    <string name="avg_cals_exp">Avg. Cals Exp.</string>
+    <string name="_1600">1600</string>
+    <string name="bmi">BMI</string>
+
+    <string name="bmig">BMI</string>
+    <string name="Height">Height</string>
+    <string name="_180cm">180cm</string>
 </resources>
