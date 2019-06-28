@@ -11,7 +11,7 @@ import mario_antolovic.com.R
 import mario_antolovic.com.Utils.ValueListenerAdapter
 import mario_antolovic.com.models.User
 
-class ProfileActivity : AppCompatActivity() {
+class ProfileActivity : navigation_activity(2) {
 
 
     private val TAG = "ProfileActivity"
@@ -22,6 +22,7 @@ class ProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
+        setupBottomNavigation()
 
         mAuth = FirebaseAuth.getInstance()
         mDatabase = FirebaseDatabase.getInstance().reference
