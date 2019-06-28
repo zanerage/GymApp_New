@@ -17,6 +17,11 @@ abstract class navigation_activity(val navNumber:Int):AppCompatActivity() {
         bottom_navigation_view.enableItemShiftingMode(false)
         bottom_navigation_view.enableAnimation(false)
 
+        /// tint color on navmenu
+        //for (i in 0 until bottom_navigation_view.menu.size()) {
+          //  bottom_navigation_view.setIconTintList(i,null)
+       // }
+
         bottom_navigation_view.setOnNavigationItemSelectedListener {
             val nextActivity =
                 when(it.itemId) {
